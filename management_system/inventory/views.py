@@ -8,7 +8,6 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.authtoken.models import Token
-from rest_framework.authtoken.views import ObtainAuthToken
 from .models import (CustomUser,UserProfile,CustomerCategory,Customer,Product,Invoice)
 from .serializer import (CutomUserSerializer,UserRegistrationSerializer,UserProfileSerializer,CustomerCategorySerializer,CustomerSerializer,ProductSerializer,InvoiceSerializer)
 from .permissions import (IsAdmin,IsUsers)
